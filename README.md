@@ -134,4 +134,4 @@ sudo nano /etc/hosts
 #加入
 minikube ip    hello.info
 ```
-## 打開hello.info/upload
+## 打開 http://hello.info/upload
