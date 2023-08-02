@@ -3,7 +3,7 @@
 ### Visit https://minikube.sigs.k8s.io/docs/start/
 ## 啟動minikube
 ```
-minikube start
+minikube start driver=docker
 ```
 ## deploy.yaml
 ```
