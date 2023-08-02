@@ -124,4 +124,14 @@ spec:
                 port:
                   number: 5000 
 ```
-
+## 創建ingress
+```
+kubectl apply -f upload-ingress.yaml
+```
+## 修改dns設定
+```
+sudo nano /etc/hosts
+#加入
+minikube ip    hello.info
+```
+## 打開hello.info/upload
