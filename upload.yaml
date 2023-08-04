@@ -1,12 +1,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: test
+  name: upload
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: test
+      app: upload
   strategy:
     type: RollingUpdate  
     rollingUpdate:
@@ -15,10 +15,10 @@ spec:
   template:
     metadata:
       labels:
-        app: test
+        app: upload
     spec:
       containers:
-      - name: test
+      - name: upload
         image: zihrueiliou/uploadimg:v1.0.0
         ports:
         - containerPort: 5000  
